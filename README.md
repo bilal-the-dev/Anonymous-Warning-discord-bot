@@ -4,7 +4,7 @@ Basically, you send run a command mentioning the member and message. It sends th
 
 ## Video tutorial
 
-Wanna see how bot works actually? Watch the video on my [Twitter]() or [Linkedin]() or [Facebook]().
+Wanna see how bot works actually? Watch the video on my [Twitter](https://twitter.com/bilal_the_dev/status/1762395352374853794) or [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7168156753925160960/) or [Facebook](https://www.facebook.com/61556182875591/videos/1109451600205350/?notif_id=1709021702988021&notif_t=video_processed&ref=notif).
 
 ## Installation
 
