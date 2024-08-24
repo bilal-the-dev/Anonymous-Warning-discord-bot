@@ -17,18 +17,18 @@ module.exports = async (message) => {
 
 		if (!userDoc) return;
 
-		const fetchedMember = await guild.members.fetch(userDoc.userId);
+		const fetchedMember = await guild.members.fetch(userDoc.userId).catch(()=> null)
 
 		const attachment = await discordTranscripts.createTranscript(channel, {
 			poweredBy: false,
-			filename: `${fetchedMember?.user?.username}.html`,
+			filename: `${fetchedMember?.user?.username ?? 'Logs'}.html`,
 		});
 
 		const embed = new EmbedBuilder()
 			.setColor("Random")
 			.setTitle("Ticket closed")
 
-			.setDescription(`**Member:** ${fetchedMember}\n**Closed by:** ${author}`)
+			.setDescription(`**Member:** <@${userDoc.userId}>\n**Closed by:** ${author}`)
 
 			.setTimestamp();
 
